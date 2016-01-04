@@ -79,4 +79,14 @@ Rails.application.configure do
 
   # gem Devise config
   config.action_mailer.default_url_options = { host: 'https://omr-tutorial-pinteresting.herokuapp.com/' }
+
+  # gem aws-sdk: sets gem Paperclip to upload images to Amazon S3
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['S3_BUCKET_NAME'],
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+    }
+  }
 end
