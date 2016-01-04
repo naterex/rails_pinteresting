@@ -31,7 +31,7 @@ gem 'devise', '~> 3.5', '>= 3.5.3'
 gem 'paperclip', '~> 4.3', '>= 4.3.2'
 
 # gem Amazon SDK for saving images in Heroku
-gem 'aws-sdk', '~> 2.2', '>= 2.2.8'
+gem 'aws-sdk', '< 2.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
