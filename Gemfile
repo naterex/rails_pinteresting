@@ -26,17 +26,23 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Bootstrap sass
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
-# gem Devise for users
+# Devise for users
 gem 'devise', '~> 3.5', '>= 3.5.3'
 
-# gem Paperclip for image uploads
+# Paperclip for image uploads
 gem 'paperclip', '~> 4.3', '>= 4.3.2'
 
-# gem Amazon SDK for saving images in Heroku
+# Amazon SDK for saving images in Heroku on S3
 gem 'aws-sdk', '< 2.0'
 
-# gem Masonry for cascading grid layout
+# jquery Masonry for cascading grid layout
 gem 'masonry-rails', '~> 0.2.4'
+
+# paginated queries with Active Record
+gem 'will_paginate', '~> 3.0', '>= 3.0.7'
+
+# bootstrap for will_paginate
+gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
